@@ -57,4 +57,10 @@ Vagrant.configure(2) do |config|
     echo "Your site should now be visible at http://10.11.12.13/"
   SHELL
 
+  # Zarino finds he needs this because apache doesn't start automatically
+  config.vm.provision "shell", run: "always", inline: <<-SHELL
+    sudo apachectl restart
+    echo "Your site should now be visible at http://10.11.12.13/"
+  SHELL
+
 end
