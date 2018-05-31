@@ -168,6 +168,11 @@
     </div>
   <?php } ?>
 
+    <a class="democracy-week-banner">
+        <strong>We’re celebrating National Democracy Week!</strong>
+        <small>Find out more</small>
+    </a>
+
   <?php if (isset($country) && in_array($country, array('NZ', 'AU', 'IE', 'CA'))) { ?>
     <div class="banner">
         <div class="full-page__row">
